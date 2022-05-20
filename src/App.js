@@ -1,24 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
 
+
 function MyButton() {
   return (
     <button className='botao'>Clica-me</button>
   );
 }
 
-function Imagem(){
-  return(
-    <image className='imagem' src="../public/Gil.png"/>
-  );
-}
+const user = {
+  name: 'Hedy Lamarr',
+  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+  imageSize: 90,
+};
+
 
 function App() {
   return (
     <div>
       <h1 className='texto'>Gilson Sebatião</h1>
-      <Imagem/>
       <MyButton/>
+
+      <img
+    className="avatar"
+    src={user.imageUrl}/>
+
+<h1>{user.name}</h1>
+      
     </div>
   );
 }
