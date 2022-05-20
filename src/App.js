@@ -3,13 +3,13 @@ import './App.css';
 
 function MyButton() {
   return (
-    <button>Clica-me</button>
+    <button className='botao'>Clica-me</button>
   );
 }
 function App() {
   return (
     <div>
-      <h1 className='texto'>Bem-vindo a minha Aplicação</h1>
+      <h1 className='texto'>Gilson Sebatião</h1>
       <MyButton/>
     </div>
   );
