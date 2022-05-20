@@ -22,10 +22,10 @@ function App() {
       <MyButton/>
 
       <img
-    className="avatar"
-    src={user.imageUrl}/>
+        className="avatar"
+        src={user.imageUrl}/>
 
-<h1>{user.name}</h1>
+      <h1 className='text'>{user.name}</h1>
       
     </div>
   );

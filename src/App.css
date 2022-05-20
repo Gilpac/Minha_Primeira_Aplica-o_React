@@ -43,6 +43,11 @@
   justify-content: center;
   color: #eeeeee;
 }
+.text{
+  display: flex;
+  justify-content: center;
+  color: #eeeeee;
+}
 
 .botao{
   display: flex;
@@ -67,4 +72,7 @@ body{
 
 .avatar {
   border-radius: 50%;
+  display: flex;
+  margin: auto;
+  margin-top: 5px;
 }
