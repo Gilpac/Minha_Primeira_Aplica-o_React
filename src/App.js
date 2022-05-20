@@ -9,7 +9,7 @@ function MyButton() {
 function App() {
   return (
     <div>
-      <h1>Bem-vindo a minha Aplicação</h1>
+      <h1 className='texto'>Bem-vindo a minha Aplicação</h1>
       <MyButton/>
     </div>
   );
