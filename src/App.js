@@ -14,13 +14,21 @@ const user = {
   imageSize: 90,
 };
 
+function Sobre() {
+  return (
+    <>
+      <h1 className='text'>Sobre</h1>
+      <p className='text'>Olá.<br />Como estás?</p>
+    </>
+  );
+}
 
 function App() {
   return (
     <div>
       <h1 className='texto'>Gilson Sebatião</h1>
       <MyButton/>
-
+      <Sobre/>
       <img
         className="avatar"
         src={user.imageUrl}/>
