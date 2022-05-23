@@ -43,6 +43,10 @@
   justify-content: center;
   color: #eeeeee;
 }
+
+.produto{
+  color: #eeeeee;
+}
 .text{
   display: flex;
   justify-content: center;
