@@ -2,6 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 
 
+function Login() {
+  return(
+    <p>Bem-vindo ao Sistema</p>
+  );
+}
+
+function LoginErro() {
+  return(
+    <p>Erro de Login</p>
+  );
+}
+
+
 function MyButton() {
   return (
     <button className='botao'>Clica-me</button>
