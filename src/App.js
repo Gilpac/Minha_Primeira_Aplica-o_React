@@ -4,13 +4,13 @@ import './App.css';
 
 function Login() {
   return(
-    <p>Bem-vindo ao Sistema</p>
+    <p className='text'>Bem-vindo ao Sistema</p>
   );
 }
 
 function LoginErro() {
   return(
-    <p>Erro de Login</p>
+    <p className='text'>Erro de Login</p>
   );
 }
 
@@ -37,8 +37,13 @@ function Sobre() {
 }
 
 function App() {
+  let content;
+  let isLoggedIn = false;
   return (
     <div>
+      {
+        isLoggedIn ? <Login/> : <LoginErro/>
+      }
       <h1 className='texto'>Gilson Sebatião</h1>
       <MyButton/>
       <Sobre/>
