@@ -17,8 +17,12 @@ function LoginErro() {
 
 
 function MyButton() {
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
   return (
-    <button className='botao'>Clica-me</button>
+    <button className='botao' onClick={handleClick}>{count} Clicks Feito</button>
   );
 }
 
