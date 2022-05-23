@@ -36,9 +36,14 @@ function Sobre() {
   );
 }
 
+const products = [
+  { title: 'Tomate', id: 1 },
+  { title: 'Cebola', id: 2 },
+  { title: 'Alho', id: 3 },
+];
+
 function App() {
-  let content;
-  let isLoggedIn = false;
+  let isLoggedIn = true;
   return (
     <div>
       {
