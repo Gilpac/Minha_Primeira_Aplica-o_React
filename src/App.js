@@ -36,14 +36,21 @@ function Sobre() {
   );
 }
 
-const products = [
+const produtos = [
   { title: 'Tomate', id: 1 },
   { title: 'Cebola', id: 2 },
   { title: 'Alho', id: 3 },
 ];
 
 function App() {
+  // Para controlar o Login/LoginErro
   let isLoggedIn = true;
+  // Lista de itens colocados dentro da função map ()
+    const lista = produtos.map(produtos =>
+    <li key={produtos.id}>
+      {produtos.title}
+    </li>
+  );
   return (
     <div>
       {
@@ -51,6 +58,7 @@ function App() {
       }
       <h1 className='texto'>Gilson Sebatião</h1>
       <MyButton/>
+      <ul className='produto'>{lista}</ul>
       <Sobre/>
       <img
         className="avatar"
