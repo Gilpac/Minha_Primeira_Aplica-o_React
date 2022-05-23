@@ -4,13 +4,13 @@ import './App.css';
 
 function Login() {
   return(
-    <p className='text'>Bem-vindo ao Sistema</p>
+    <p className='textL'>Bem-vindo ao Sistema</p>
   );
 }
 
 function LoginErro() {
   return(
-    <p className='text'>Erro de Login</p>
+    <p className='textL'>Erro de Login</p>
   );
 }
 
@@ -37,9 +37,9 @@ function Sobre() {
 }
 
 const produtos = [
-  { title: 'Tomate', id: 1 },
-  { title: 'Cebola', id: 2 },
-  { title: 'Alho', id: 3 },
+  { title: 'Programador Web', id: 1 },
+  { title: 'Técnico de Hardware/Software', id: 2 },
+  { title: 'Desenhista', id: 3 },
 ];
 
 function App() {
@@ -53,13 +53,15 @@ function App() {
   );
   return (
     <div>
+     
+      <h1 className='texto'>Gilson Sebatião</h1>
       {
         isLoggedIn ? <Login/> : <LoginErro/>
       }
-      <h1 className='texto'>Gilson Sebatião</h1>
       <MyButton/>
-      <ul className='produto'>{lista}</ul>
       <Sobre/>
+      <h1 className='produto'>Meus Serviços</h1>
+      <ul className='produto'>{lista}</ul>
       <img
         className="avatar"
         src={user.imageUrl}/>
